@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    /* box-sizing:unset; */
+}
+
+:root{
+    --sectionsHeight: 100vh;
+    --bs-gutter-x: 0 !important;
+    
+    /* fonts : 1 to .. from big to small */
+    --font1: 98px;
+    --font2: 37px;
+    --font3: 25px;
+    --font4: 20px;
+    /* --font4: 15px; */
+
+    /*
+    --font1insmalldevices: 45.5px;
+    --font2insmalldevices: 37px;
+    --font3insmalldevices: 20px; */
+
+    
+}
+
+.row{
+    --bs-gutter-x: 0 !important;
+}
+
+@media screen and (max-width : 991px) {
+    .coding-photo{
+        order: 6!important;
+        height: 50vh;
+    }
+    .about-txt{
+        height: 50vh;
+    }
+    .projects-txt2{
+        padding-top: 54px !important;
+    }
+
+    .slider-place{
+        margin-top: 238px;
+    }
+
+}
+
+@media screen and (max-width : 600px){
+    :root{
+        --font1: 60px;
+        --font2: 29px;
+        --font3: 15px;
+        --font4: 15px;
+    }
+    .projects-txt2{
+        padding-top: 54px !important;
+    }
+
+}
+
+
+/* samsung galaxy s20 ultra 412px */
+@media screen and (max-width : 420px){ 
+    .slider-place{
+        margin-top: 200px;
+    }
+    .left-arrow {
+        width: 24px !important;
+        padding-right: 14px !important;
+    }
+    .right-arrow {
+        width: 24px !important;
+        padding-left: 14px !important;
+    }
+    .slide1{
+        width: 10px !important;
+        height: 140px !important;
+    }
+    .slide2{
+        width: 208px !important;
+        height: 208px !important;
+    }
+    .slide3{
+        width: 10px !important;
+        height: 140px !important;
+    }
+}
+
+
+
+
+/********************** home section ***********************/
+.home-section {
+    background-color: #04303F;
+    /* height: calc(var(--sectionsHeight) - 10vh); */
+    height: var(--sectionsHeight);
+    max-width: 100% !important;  
+    color: white !important;
+    display: flex;
+    align-items: center;
+}
+/* @media screen and (max-width: 768px) {
+    .home-txt2 {
+        font-size: var(--font1insmalldevices);
+    }
+    
+} */
+
+
+.navbar {
+    /* background-color: #04303F !important; */
+    background-color: transparent !important;
+    /* height: 89px; */
+    margin-top: -8px;
+}
+/* .container-fluid-nav{
+    height: 89px;
+    margin-top: -8px;
+} */
+nav a{
+    color: rgb(0, 0, 0) !important;
+    /* margin-top: 10px !important;
+    margin-right: 38px !important;
+    font-size: 21px !important;
+    padding: 0px !important; */
+    
+}
+.logo{
+    margin-top: 16px;
+    margin-left: 26px;
+}
+.home-txt{
+    /* margin-left: 212px;
+    margin-top: 169px; */
+
+    align-content: center;
+    padding-left: 16%;
+    margin-top: 26px;
+}
+.home-txt1{
+    font-size: var(--font2);
+    margin-bottom: 0px;
+}
+.home-txt2{
+    font-size: var(--font1);
+    margin: 0px;
+    line-height: normal;
+}
+.home-txt3{
+    display: inline-flex;
+    font-size: var(--font3);
+    /* width: 351px; */
+}
+
+
+
+/********************** about section ***********************/
+.about-section {
+    background-color: #ffffff;
+    height: var(--sectionsHeight);
+    max-width: 100%;
+    padding: 0px;
+}
+
+.row-about{
+    height: inherit;
+}
+.coding-photo{
+    /* width: 50%; */
+    background-image: url("./images/codingphoto-png.png");
+    background-size: 100% 100%;
+}
+.about-txt{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;/* align lal txt bl nos */
+}
+.about-txt1{
+    font-size: var(--font2);
+}
+.about-txt2{
+    font-size: var(--font4);
+    font-weight: 350;
+}
+
+
+/********************** skills section ***********************/
+.skills-section {
+    background-color: #04303F;
+    height: var(--sectionsHeight);
+    max-width: 100%;
+}
+
+
+
+/********************** projects section ***********************/
+.projects-section {
+    background-color: #ffffff;
+    height: var(--sectionsHeight);
+    max-width: 100%;
+    background-image: url(./images/wave-first3png.png);
+    background-size: 100% 100%;
+}
+.projects-txt1{
+    font-size: var(--font2);
+}
+.projects-txt2{
+    font-size: var(--font4);
+    text-align: center;
+    padding-top: 24px;
+}
+.slider-place{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-arrow{
+    /* background-size: 50% 50%; */
+    height: 75px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.right-arrow{
+    height: 75px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.slide1{
+    z-index: 0;
+    width: 70px;
+    height: 190px;
+    /* background-color: #04303F; */
+    opacity: 85%;
+    background-image: url(./images/runner-game.png);
+    background-size: 100% 100%;
+    border: solid;
+}
+.slide2{
+    z-index: 1;
+    width: 280px;
+    height: 280px;
+    /* background-color: #04303F; */
+    background-image: url(./images/xo-game.png);
+    background-size: 100% 100%;
+    border: solid;
+}
+.slide3{
+    z-index: 0;
+    width: 70px;
+    height: 190px;
+    /* background-color: #04303F; */
+    opacity: 85%;
+    background-image: url(./images/w3schools.png);
+    background-size: 100% 100%;
+    border: solid;
+}
+
+
+
+/********************** contactus section ***********************/
+.contactus-section {
+    background-color: #04303F;
+    height: var(--sectionsHeight);
+    max-width: 100%;
+}
+.contactme-txt{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font2);
+    color: white;
+    padding-top: 20px;
+}
+.contact-form{
+    background-color: white;
+}
+.form-txt{
+    outline:none !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+    border: none;
+    border-bottom:solid 3px black ;
+    border-radius: 0%;
+}
+.Svg-box{
+    /* background-color:aquamarine; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/* canvas{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    border:1px solid #d3d3d3;
+    background-color: #b37e7e;
+} */
+
+.img{
+    width: 45px;
+    position: absolute;
+}
+#img1{
+    width: 55px;
+    top: 28px;
+    right: 73px;
+}
+#img2{
+    top: 258px;
+    right: 200px;
+}
+#img3{
+    top: 170px;
+    right: 73px;
+}
+#img4{
+    top: 100px;
+    right: 238px;
+}
